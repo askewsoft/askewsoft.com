@@ -1,0 +1,68 @@
+---
+import { getCollection } from 'astro:content';
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import PortfolioPreview from '../components/PortfolioPreview.astro';
+import Hero from '../components/Hero.astro';
+import Grid from '../components/Grid.astro';
+
+const projects = (await getCollection('portfolio')).sort(
+	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
+);
+---
+
+<BaseLayout
+	title="Portfolio | Steve Quince"
+	description="A collection of public projects and ideas yet to be brought to life"
+>
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-8">
+			<Hero
+				title="Portfolio"
+				tagline="Our eclectic mix of whimsically useful solutions"
+				align="start"
+			/>
+			<Grid>
+				{
+					projects.map((project) => (
+						<li class="card">
+							<PortfolioPreview project={project} />
+						</li>
+					))
+				}
+			</Grid>
+		</main>
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	/* Need to move this to the parent container */
+	.card:nth-child(1) {
+		transform: rotate(1.5deg);
+	}
+	.card:nth-child(2) {
+		transform: rotate(-3deg);
+	}
+	.card:nth-child(3) {
+		transform: rotate(-1deg);
+	}
+	.card:nth-child(4) {
+		transform: rotate(+4deg);
+	}
+	.card:hover {
+		transform: rotate(0deg) translateY(-10px);
+		box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+	}
+	.card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 4px;
+		background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+	}
+</style>

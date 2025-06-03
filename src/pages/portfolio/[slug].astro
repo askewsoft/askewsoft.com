@@ -1,0 +1,100 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContactCTA from '../../components/ContactCTA.astro';
+import Hero from '../../components/Hero.astro';
+
+export async function getStaticPaths() {
+	const projects = await getCollection('portfolio');
+	return projects.map((project) => ({
+		params: { slug: project.id },
+		props: { project },
+	}));
+}
+
+const { project } = Astro.props;
+---
+
+<BaseLayout
+	title={`${project.data.title} | Steve Quince`}
+	description={project.data.description}
+>
+	<div class="stack gap-20">
+        <a href="/portfolio/" class="back-link">← Back to Portfolio</a>
+		<main class="wrapper portfolio">
+			<Hero
+				title={project.data.title}
+				tagline={project.data.description}
+			>
+				{project.data.img && (
+					<img
+						src={project.data.img}
+						alt={project.data.img_alt || ''}
+					/>
+				)}
+			</Hero>
+
+			<article class="content">
+				<div set:html={project.body} />
+			</article>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.portfolio {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+		color: var(--gray-200);
+		font-size: var(--text-lg);
+	}
+
+	.back-link {
+		display: inline-block;
+		margin-bottom: 2rem;
+        margin-left: 2rem;
+		color: var(--gray-300);
+		text-decoration: none;
+		transition: color var(--theme-transition);
+	}
+
+	.back-link:hover,
+	.back-link:focus {
+		color: var(--gray-0);
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.portfolio {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.portfolio > :global(:first-child) {
+			grid-column-start: 2;
+		}
+	}
+</style> 

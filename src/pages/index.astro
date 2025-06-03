@@ -1,0 +1,48 @@
+---
+// Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Component Imports
+import CallToAction from '../components/CallToAction.astro';
+import Grid from '../components/Grid.astro';
+import Hero from '../components/Hero.astro';
+import Icon from '../components/Icon.astro';
+import PortfolioPreview from '../components/PortfolioPreview.astro';
+
+// Page section components
+import ContactCTA from '../components/ContactCTA.astro';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+---
+
+<BaseLayout>
+	<div class="stack gap-20 lg:gap-48">
+		<div class="wrapper stack gap-8 lg:gap-20">
+			<header class="hero">
+				<Hero
+					title="An eclectic mix of whimsically useful solutions"
+					tagline="This site is a collection of public projects and vaporware — ideas tugging at the corners of my mind, begging to be brought to life. \
+						By sharing, we hope to showcase our work, inspire feedback, and provide useful tools for the productively curious among us."
+					align="start"
+				>
+				</Hero>
+			</header>
+		</div>
+	</div>
+</BaseLayout>
+
+<style>
+	.hero {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+	}
+
+	@media (min-width: 50em) {
+		.hero {
+			padding-inline: 2.5rem;
+		}
+	}
+</style>
