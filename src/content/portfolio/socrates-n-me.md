@@ -4,7 +4,7 @@ publishDate: 2019-12-01 00:00:00
 img: /assets/stock-2.jpg
 img_alt: background image of socrates, einstein, and question marks
 description: |
-  Helping to teach humans how to reason again
+  Helping to teach humans how to reason again — personalized for just you
 tags:
   - LLM
   - Voice Assistants

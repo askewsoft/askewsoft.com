@@ -4,7 +4,7 @@ publishDate: 2020-03-04 00:00:00
 img: /assets/stock-3.jpg
 img_alt: Sample screen shots of the pantry plus mobile app
 description: |
-  Shareable shopping lists that use location to automatically sort categories and remembers your most frequent recurring purchases.
+  Shareable shopping lists that automatically sort categories based on your location
 tags:
   - React-Native
   - TypeScript
