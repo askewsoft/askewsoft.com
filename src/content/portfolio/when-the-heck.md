@@ -1,14 +1,14 @@
 ---
-title: Markdown Mystery Tour
+title: When the Heck
 publishDate: 2020-03-02 00:00:00
 img: /assets/stock-1.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img_alt: calendars, clocks, and scrolls
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+  Helping you put your life into chronological context
 tags:
-  - Design
-  - Dev
-  - User Testing
+  - React
+  - Python
+  - Postgres
 ---
 
 ## Level-two heading
