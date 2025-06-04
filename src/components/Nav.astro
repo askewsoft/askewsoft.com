@@ -2,11 +2,22 @@
 import Icon from './Icon.astro';
 import ThemeToggle from './ThemeToggle.astro';
 
+// Fun way to keep the nav labels dynamic
+const labels = {
+	about: ['Huh?', 'About', 'What the?', 'Say what?', 'OK, hmmmm?'],
+	portfolio: ['Bits-n-bobs', 'Stuff', 'Things', 'Projects', 'Oooh, Shiny!'],
+	contact: ['Minions', 'Overlords', 'Team', 'Assembly Line', 'Who this?'],
+};
+
+const aboutIndex = Math.floor(Math.random() * labels.about.length);
+const portfolioIndex = Math.floor(Math.random() * labels.portfolio.length);
+const contactIndex = Math.floor(Math.random() * labels.contact.length);
+
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
-	{ label: 'Huh?', href: '/' },
-	{ label: 'Bit-n-bobs', href: '/portfolio/' },
-	{ label: 'Minions', href: '/contact/' },
+	{ label: labels.about[aboutIndex], href: '/' },
+	{ label: labels.portfolio[portfolioIndex], href: '/portfolio/' },
+	{ label: labels.contact[contactIndex], href: '/contact/' },
 ];
 
 /** Test if a link is pointing to the current page. */
