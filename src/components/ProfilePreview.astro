@@ -9,7 +9,8 @@ interface Props {
 const { data, id } = Astro.props.contributor;
 ---
 
-<a class="card" href={`/profiles/${id}`}>
+<!-- <a class="card" href={`/contact/${id}`}> -->
+<a class="card" href={`/contact/`}>
 	<div class="title">{data.name}</div>
 	<div class="tags">
 		{data.tags?.map((tag) => (
