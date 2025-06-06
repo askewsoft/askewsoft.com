@@ -9,8 +9,18 @@
 		border: 1px solid var(--accent-regular);
 		background-color: var(--accent-regular);
 		border-radius: 1rem;
-		font-size: var(--text-md);
-		line-height: 1.35;
+		font-size: var(--text-sm);
 		white-space: nowrap;
+		padding: 0.25rem 0.5rem;
+		margin: 0 0.15rem 0 0.15rem;
+		line-height: 0.75;
+	}
+	@media (min-width: 50em) {
+		.pill {
+			font-size: var(--text-md);
+			padding: 0.5rem 1rem;
+			margin: 0 0.25rem 0 0.25rem;
+			line-height: 1.35;
+		}
 	}
 </style>
