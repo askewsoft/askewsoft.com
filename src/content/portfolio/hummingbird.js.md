@@ -4,7 +4,8 @@ publishDate: 2015-08-14 00:00:00
 img: /assets/stock-4.jpg
 img_alt: Drop down list of typeahead suggestions
 description: |
-  Impossibly quick and remarkably precise — Misspellings and nicknames are no match for this fast and forgiving typeahead engine
+  Misspellings and nicknames are no match for this fast and forgiving typeahead engine
+label: published
 tags:
   - NPM
   - JavaScript

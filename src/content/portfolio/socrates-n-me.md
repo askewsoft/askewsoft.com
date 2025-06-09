@@ -5,6 +5,7 @@ img: /assets/stock-2.jpg
 img_alt: background image of socrates, einstein, and question marks
 description: |
   Helping to teach humans how to reason again — personalized for just you
+label: vaporware
 tags:
   - LLM
   - Voice Assistants

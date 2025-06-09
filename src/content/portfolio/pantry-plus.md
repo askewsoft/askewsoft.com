@@ -5,6 +5,7 @@ img: /assets/stock-3.jpg
 img_alt: Sample screen shots of the pantry plus mobile app
 description: |
   Shareable shopping lists that automatically sort categories based on your location
+label: beta
 tags:
   - React-Native
   - TypeScript

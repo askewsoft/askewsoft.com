@@ -5,6 +5,7 @@ img: /assets/stock-1.jpg
 img_alt: calendars, clocks, and scrolls
 description: |
   Helping you put your life into chronological context
+label: vaporware
 tags:
   - React
   - Python
