@@ -1,0 +1,32 @@
+<div class="label-container">
+	<div class="label">
+		<slot />
+	</div>
+</div>
+
+<style>
+	.label-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0.25rem;
+		/* margin-top: 0.5rem; */
+		position: relative;
+		z-index: 2;
+	}
+	.label {
+		background-color: var(--accent-regular);
+		border-radius: 0.5rem;
+		font-size: var(--text-sm);
+		font-weight: 600;
+		white-space: nowrap;
+		color: var(--accent-text-over);
+		padding: 0.25rem 0.75rem;
+	}
+	@media (min-width: 50em) {
+		.label {
+			font-size: var(--text-md);
+			padding: 0.5rem 1rem;
+		}
+	}
+</style>
