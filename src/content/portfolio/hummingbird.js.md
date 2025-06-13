@@ -1,7 +1,7 @@
 ---
 title: hummingbird.js
 publishDate: 2015-08-14 00:00:00
-img: /assets/stock-4.jpg
+img: /assets/stock-1.jpg
 img_alt: Drop down list of typeahead suggestions
 description: |
   Misspellings and nicknames are no match for this fast and forgiving typeahead engine
