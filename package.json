@@ -6,7 +6,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "s3sync": "aws s3 sync dist/ s3://askewsoft.com --delete",
+    "clearcache": "source .env && aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths '/*'",
+    "deploy": "npm run s3sync && npm run clearcache"
   },
   "dependencies": {
     "astro": "^5.8.1"
