@@ -6,6 +6,7 @@ imgAlt: Screen shot of the Askewsoft portfolio page of projects
 description: |
   This very site is an example of the stuff we've built - a little meta and a little inceptionesque
 detailAvailable: true
+repo: https://github.com/askewsoft/askewsoft.com
 label: published
 age: newish
 tags:
@@ -15,6 +16,8 @@ tags:
   - Markdown
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
-
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+We have been noodling on random ideas for years now, but had never really written them down before. Well, we finally took the time to write them down and we needed a place to share them with the world — some things done or in progress and other things still being drempt about.
+<br/><br/>
+We wanted to build a static content site as our portfoliio where we could use some really simple for content but keep things somewhat modulur still. After some research, we settled on Astro. It has the perfect combination of modularity for component based maintainability similar to ReactJS, but without all the weight and complexity.
+<br/><br/>
+With the architecture and site structure out of the way, we can now go back to day dreaming about the software we wish existed...

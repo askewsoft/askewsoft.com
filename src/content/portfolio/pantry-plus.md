@@ -3,9 +3,12 @@ title: Pantry Plus
 publishDate: 2020-03-04 00:00:00
 img: /assets/stock-3.jpg
 imgAlt: Sample screen shots of the pantry plus mobile app
+imgDetail: /assets/pantryPlusLogo.png
+imgDetailScale: 0.8
 description: |
   Shareable shopping lists that automatically sort categories based on your location
 detailAvailable: true
+repo: https://github.com/askewsoft/pantryPlus
 label: beta
 age: newish
 tags:
@@ -13,8 +16,20 @@ tags:
   - TypeScript
   - Swagger
   - MySQL
+screenshots:
+  - img: /assets/screenshots/pantryplus/dashboard.png
+    imgAlt: Dashboard of lists
+    imgScale: 0.75
+  - img: /assets/screenshots/pantryplus/list.png
+    imgAlt: List details
+    imgScale: 0.75
+  - img: /assets/screenshots/pantryplus/locations.png
+    imgAlt: Shopping locations
+    imgScale: 0.75
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
-
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+My family often has special requests for things from the grocery and it can be hard to keep track of everything — staples that we need to regularly replace on a weekly, monthly, quarterly basis as well as one-off special requests. Furthermore, we sometimes shop at different stores with different groupings and sequencing of departments.
+<br/><br/>
+We started using the iOS Reminders app and it's pretty good. You can put stuff on a list, share it with others, even ask Siri to add things to it. But, while you can create categories, it is a pain to organize and resort depending on the store. Combine that unmet need with a desire to build something I had never previously had the chance to work on - a mobile app - and thus was born Pantry Plus.
+<br/><br/>
+It is intended for any kind of shopping list that you may regularly (or not) revisit and want to share with loved ones. It is location aware and will automatically order your categories based on the store you are at.
