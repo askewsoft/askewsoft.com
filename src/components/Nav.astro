@@ -29,7 +29,7 @@ const isCurrentPage = (href: string) => {
 };
 ---
 
-<nav>
+<nav class="wrapper">
 	<div class="menu-header">
 		<div class="site-title">
 			<span class="site-title-text">Askewsoft</span>
@@ -122,7 +122,7 @@ const isCurrentPage = (href: string) => {
 				setExpanded(e.matches);
 				btn.hidden = e.matches;
 			};
-			const mediaQueries = window.matchMedia('(min-width: 50em)');
+			const mediaQueries = window.matchMedia('(min-width: 55em)');
 			handleViewports(mediaQueries);
 			mediaQueries.addEventListener('change', handleViewports);
 		}
@@ -137,6 +137,8 @@ const isCurrentPage = (href: string) => {
 		font-family: var(--font-brand);
 		font-weight: 500;
 		margin-bottom: 3.5rem;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.menu-header {
@@ -235,10 +237,7 @@ const isCurrentPage = (href: string) => {
 	}
 
 	.socials {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.625rem;
-		font-size: var(--icon-size);
+		display: none;
 	}
 
 	.social {
@@ -260,13 +259,14 @@ const isCurrentPage = (href: string) => {
 		height: calc(var(--icon-size) + 2 * var(--icon-padding));
 	}
 
-	@media (min-width: 50em) {
+	@media (min-width: 55em) {
 		nav {
-			display: grid;
-			grid-template-columns: 1fr auto 1fr;
+			display: flex;
+			justify-content: space-between;
 			align-items: center;
-			padding: 2.5rem 5rem;
-			gap: 1rem;
+			padding: 2.5rem;
+			gap: 3rem;
+			max-width: 83rem;
 		}
 
 		.menu-header {
@@ -287,7 +287,8 @@ const isCurrentPage = (href: string) => {
 			font-size: var(--text-sm);
 			border-radius: 999rem;
 			border: 0;
-			padding: 0.5rem 0.5625rem;
+			padding: 0.5rem;
+			align-items: center;
 			background: radial-gradient(var(--gray-900), var(--gray-800) 150%);
 			box-shadow: var(--shadow-md);
 		}
@@ -335,17 +336,13 @@ const isCurrentPage = (href: string) => {
 		}
 
 		.socials {
-			display: none;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.625rem;
+			font-size: var(--icon-size);
 		}
 	}
 
-	@media (min-width: 60em) {
-		.socials {
-			display: flex;
-			justify-content: flex-end;
-			gap: 0;
-		}
-	}
 	@media (forced-colors: active) {
 		.link[aria-current='page'] {
 			color: SelectedItem;

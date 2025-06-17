@@ -75,6 +75,8 @@
 
 	/* Transitions */
 	--theme-transition: 0.2s ease-in-out;
+
+	/* Breakpoints */
 }
 
 :root.theme-dark {
@@ -234,7 +236,7 @@ h5 {
 	gap: 12rem;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 55em) {
 	.lg\:gap-2 {
 		gap: 0.5rem;
 	}
