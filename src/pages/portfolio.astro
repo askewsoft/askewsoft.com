@@ -8,9 +8,13 @@ import PortfolioPreview from '../components/PortfolioPreview.astro';
 import Hero from '../components/Hero.astro';
 import Grid from '../components/Grid.astro';
 
-const projects = (await getCollection('portfolio')).sort(
-	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
-);
+// Define the desired order as an array (matches your schema enum order if desired)
+const ageOrder = ['newish', 'old', 'future'];
+
+const projects = (await getCollection('portfolio'))
+	.sort(
+		(a, b) => ageOrder.indexOf(a.data.age) - ageOrder.indexOf(b.data.age),
+	);
 ---
 
 <BaseLayout
