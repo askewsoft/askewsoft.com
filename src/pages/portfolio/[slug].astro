@@ -59,7 +59,7 @@ const { project } = Astro.props;
 	.content {
 		grid-column: 2 / 4;
 		color: var(--gray-200);
-		font-size: var(--text-lg);
+		font-size: var(--text-md);
 	}
 
 	.back-link {
@@ -88,6 +88,10 @@ const { project } = Astro.props;
 	}
 
 	@media (min-width: 55em) {
+		.content {
+			font-size: var(--text-lg);
+		}
+
 		.portfolio {
 			display: grid;
 			grid-template-columns: 1fr 60% 1fr;
