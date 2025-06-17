@@ -1,0 +1,21 @@
+---
+const { href, text } = Astro.props;
+---
+
+<a target="_blank" href={href} class="repo-link">
+	{text} <span class="repo-link-icon">➚</span>
+</a>
+
+<style>
+	.repo-link {
+		text-decoration: none;
+		display: flex;
+		align-items: flex-end;
+		gap: 0.5rem;
+	}
+
+	.repo-link-icon {
+		font-size: var(--text-xl);
+		font-family: "Arial Unicode MS", sans-serif;
+	}
+</style>

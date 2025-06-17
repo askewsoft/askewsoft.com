@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ContactCTA from '../../components/ContactCTA.astro';
 import Hero from '../../components/Hero.astro';
+import LinkNewWindow from '../../components/LinkNewWindow.astro';
 
 export async function getStaticPaths() {
 	const projects = await getCollection('portfolio');
@@ -13,13 +14,15 @@ export async function getStaticPaths() {
 }
 
 const { project } = Astro.props;
+
+const screenshots = project.data.screenshots || [];
 ---
 
 <BaseLayout
 	title={`${project.data.title} | Askewsoft`}
 	description={project.data.description}
 >
-	<div class="stack gap-20">
+	<div class="stack gap-8">
         <a href="/portfolio/" class="back-link">← Back to Portfolio</a>
 		<main class="wrapper portfolio">
 			<Hero
@@ -28,8 +31,8 @@ const { project } = Astro.props;
 			>
 				{project.data.img && (
 					<img
-						src={project.data.img}
-						alt={project.data.imgAlt || ''}
+						class="img-detail"
+						src={project.data.imgDetail}
 					/>
 				)}
 			</Hero>
@@ -37,27 +40,41 @@ const { project } = Astro.props;
 			<article class="content">
 				<div set:html={project.body} />
 			</article>
+
+			{project.data.repo && (
+				<div class="repo-container">
+					<LinkNewWindow href={project.data.repo} text="View on GitHub" />
+				</div>
+			)}
+
+			{screenshots.length > 0 && (
+				<div class="screenshots-container">
+					{screenshots.map((screenshot) => (
+						<img src={screenshot.img} alt={screenshot.imgAlt} style={`transform: scale(${screenshot.imgScale})`} />
+					))}
+				</div>
+			)}
 		</main>
 
 		<ContactCTA />
 	</div>
 </BaseLayout>
 
-<style>
+<style define:vars={{ imgScale: project.data.imgDetailScale || 1 }}>
 	.portfolio {
 		display: flex;
 		flex-direction: column;
-		gap: 3.5rem;
 	}
 
-	img {
+	.img-detail {
 		margin-top: 1.5rem;
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-md);
+		transform: scale(var(--imgScale));
 	}
 
 	.content {
-		grid-column: 2 / 4;
+		grid-column: 2 / 3;
 		color: var(--gray-200);
 		font-size: var(--text-md);
 	}
@@ -87,6 +104,19 @@ const { project } = Astro.props;
 		text-decoration-color: currentColor;
 	}
 
+	.repo-container {
+		grid-column: 2 / 3;
+		display: flex;
+		justify-content: center;
+		margin-top: 2rem;
+	}
+
+	.screenshots-container {
+		grid-column: 2 / 3;
+		display: grid;
+		grid-template-rows: repeat(3, 1fr);
+	}
+
 	@media (min-width: 55em) {
 		.content {
 			font-size: var(--text-lg);
@@ -99,6 +129,11 @@ const { project } = Astro.props;
 
 		.portfolio > :global(:first-child) {
 			grid-column-start: 2;
+		}
+
+		.screenshots-container {
+			margin-top: 2rem;
+			grid-template-columns: repeat(3, 1fr);
 		}
 	}
 </style> 
