@@ -8,11 +8,13 @@ export const collections = {
 		schema: z.object({
 			title: z.string(),
 			description: z.string(),
+			detailAvailable: z.boolean(),
 			label: z.enum(['published', 'beta', 'vaporware']),
+			age: z.enum(['newish', 'old', 'future']),
 			publishDate: z.coerce.date(),
 			tags: z.array(z.string()),
 			img: z.string(),
-			img_alt: z.string().optional(),
+			imgAlt: z.string().optional(),
 		}),
 	}),
 	profiles: defineCollection({
@@ -24,7 +26,7 @@ export const collections = {
 			publishDate: z.coerce.date(),
 			tags: z.array(z.string()).optional(),
 			img: z.string(),
-			img_alt: z.string().optional(),
+			imgAlt: z.string().optional(),
 			liurl: z.string().optional(),
 		}),
 	}),

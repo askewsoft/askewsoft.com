@@ -17,7 +17,7 @@ const { data, id } = Astro.props.contributor;
 			<Pill>{tag}</Pill>
 		))}
 	</div>
-	<img src={data.img} alt={data.img_alt || ''} loading="lazy" decoding="async" />
+	<img src={data.img} alt={data.imgAlt || ''} loading="lazy" decoding="async" />
 </a>
 
 <style>

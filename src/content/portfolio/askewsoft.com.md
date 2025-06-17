@@ -2,10 +2,12 @@
 title: Askewsoft.com
 publishDate: 2020-06-12 00:00:00
 img: /assets/stock-4.jpg
-img_alt: Screen shot of the Askewsoft portfolio page of projects
+imgAlt: Screen shot of the Askewsoft portfolio page of projects
 description: |
   This very site is an example of the stuff we've built - a little meta and a little inceptionesque
+detailAvailable: true
 label: published
+age: newish
 tags:
   - Astro
   - CSS

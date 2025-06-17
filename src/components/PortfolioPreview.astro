@@ -8,10 +8,10 @@ interface Props {
 }
 
 const { data, id } = Astro.props.project;
+const detailAvailable = data.detailAvailable;
 ---
 
-<!-- <a class="card" href={`/portfolio/${id}`}> -->
-<a class="card" href={`/portfolio/`}>
+<a class="card" href={detailAvailable ? `/portfolio/${id}` : '#'}>
 	<div class="title">{data.title}</div>
 	<Label class="label">{data.label}</Label>
 	<div class="description">{data.description}</div>
@@ -20,15 +20,14 @@ const { data, id } = Astro.props.project;
 			<Pill>{tag}</Pill>
 		))}
 	</div>
-	<img src={data.img} alt={data.img_alt || ''} loading="lazy" decoding="async" />
+	<img src={data.img} alt={data.imgAlt || ''} loading="lazy" decoding="async" />
 </a>
 
-<style>
+<style define:vars={{ pointerEvents: detailAvailable ? 'auto' : 'none' }}>
 	.card {
 		border-radius: 1.5rem;
 		font-family: var(--font-brand);
 		display: grid;
-		gap: 0.5rem;
 		grid-template-areas:
 			'title label'
 			'main main'
@@ -38,6 +37,7 @@ const { data, id } = Astro.props.project;
 		text-decoration: none;
 		transition: all 0.3s ease;
 		position: relative;
+		pointer-events: var(--pointerEvents);
 	}
 
 	.title {
