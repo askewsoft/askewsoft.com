@@ -1,11 +1,11 @@
 ---
 title: When the Heck
-publishDate: 2020-03-02 00:00:00
+publishDate: 2025-03-02 00:00:00
 img: /assets/stock-1.jpg
 imgAlt: calendars, clocks, and scrolls
 description: |
   Helping you put your life into chronological context
-detailAvailable: false
+detailAvailable: true
 label: vaporware
 age: future
 tags:
@@ -14,25 +14,8 @@ tags:
   - Postgres
 ---
 
-## Level-two heading
-
-> Tell me and I forget. Teach me and I remember. Involve me and I learn.
-
-Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
-
-Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel quam elementum pulvinar etiam non.
-
-### Level-three heading
-
-Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl pretium fusce.
-
-### Level-three heading
-
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
-
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
-
-#### Level-four heading
-
-- We noted this
-- And also this other point
+I was never much of a fan of history growing up, because the way it is often taught in schools is so sanitized and utterly without personal context. Over the years, as I became more interested in learning about my family's historical roots, I also became intrigued by learning how their lives paralleled world events. It makes one think about how they contemporaneously perceived what we now regard as "history".
+<br/><br/>
+The idea behind "When the Heck" is to make it easier to hone in on a timeframe and location to uncover events that were relevant to our ancestors while they were alive. My hope is to better understand correlations between events. One could pick and choose perhaps which type of events in history they would like to focus on and explore the possibilities of causal events and circumstances.
+<br/><br/>
+In other words, to make history relevant to our own experiences and existence.

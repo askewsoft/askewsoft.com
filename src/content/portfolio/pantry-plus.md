@@ -1,6 +1,6 @@
 ---
 title: Pantry Plus
-publishDate: 2020-03-04 00:00:00
+publishDate: 2025-03-04 00:00:00
 img: /assets/stock-3.jpg
 imgAlt: Sample screen shots of the pantry plus mobile app
 imgDetail: /assets/pantryPlusLogo.png

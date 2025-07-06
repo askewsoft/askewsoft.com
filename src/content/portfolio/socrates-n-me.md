@@ -1,11 +1,11 @@
 ---
 title: Socrates & Me
-publishDate: 2019-12-01 00:00:00
+publishDate: 2025-07-06 00:00:00
 img: /assets/stock-2.jpg
 imgAlt: background image of socrates, einstein, and question marks
 description: |
   Helping to teach humans how to reason again — personalized for just you
-detailAvailable: false
+detailAvailable: true
 label: vaporware
 age: future
 tags:
@@ -14,12 +14,10 @@ tags:
   - RAG
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
-
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
-
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
-
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+This would be perhaps the most ambitious project we could take on, though one that is now perhaps more readily achievable given the advent of GenAI (generative artificial intelligence) and the LLMs (large language models). As I progressed through my education and in particular as my education became more specialized, it became more difficult to find others to whom I could pose questions and gain better understanding of a subject. Even today, being a curious character, I still find that topics arise that many talk about but few understand.
+<br/><br/>
+Combine this desire to learn complex subjects with my firm belief that learning can only happen when knowledge is created by committing new information to memory and relationships created in our brains between this information and prior acquired knowledge. That's just a long winded way to saying, you cannot learn anything without already knowing something to which you can relate this new information. We're born with some fundamental scaffolding, and we begin building from there.
+<br/><br/>
+The best way to teach, in my opinion, is to start by asking questions. Explore what the student may already know and use that to anchor the new idea, concept, and information in a way that is contextually relevant to that student. It has become "normal" for many people to conduct web searches to locate possible sources of information. Increasingly, it is becoming common for a growing number of folks to convert those "search queries" into natural language questions and pose them to LLMs that swiftly respond with answers. That's a step in the right direction, but some are worried, rightly, I believe, that humans have been degrading our ability reason. That is, to judge the quality and logic of assertions.
+<br/><br/>
+The socratic method has long been known to combat this. By challenging ourselves to take what we already know, generate hypotheses, apply logic, and reason our way to answers, we both identify information we are missing but also better equipping our brains to analyze and synthesize information.
