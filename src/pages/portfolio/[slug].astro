@@ -23,7 +23,9 @@ const screenshots = project.data.screenshots || [];
 	description={project.data.description}
 >
 	<div class="stack gap-8">
-        <a href="/portfolio/" class="back-link">← Back to Portfolio</a>
+        <div class="wrapper back-link-wrapper">
+            <a href="/portfolio/" class="back-link">← Back to Portfolio</a>
+        </div>
 		<main class="wrapper portfolio">
 			<Hero
 				title={project.data.title}
@@ -79,10 +81,12 @@ const screenshots = project.data.screenshots || [];
 		font-size: var(--text-md);
 	}
 
+	.back-link-wrapper {
+		margin-bottom: 2rem;
+	}
+
 	.back-link {
 		display: inline-block;
-		margin-bottom: 2rem;
-        margin-left: 2rem;
 		color: var(--gray-300);
 		text-decoration: none;
 		transition: color var(--theme-transition);
@@ -120,6 +124,15 @@ const screenshots = project.data.screenshots || [];
 	@media (min-width: 55em) {
 		.content {
 			font-size: var(--text-lg);
+		}
+
+		.back-link-wrapper {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.back-link {
+			grid-column-start: 2;
 		}
 
 		.portfolio {
