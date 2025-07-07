@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import Pill from './Pill.astro';
+import ProfileCard from './ProfileCard.astro';
 
 interface Props {
 	contributor: CollectionEntry<'profiles'>;
@@ -9,16 +9,15 @@ interface Props {
 const { data, id } = Astro.props.contributor;
 ---
 
-<!-- <a class="card" href={`/contact/${id}`}> -->
-<a class="card" href={`/contact/`}>
-	<div class="title">{data.name}</div>
-	<div class="tags">
-		{data.tags?.map((tag) => (
-			<Pill>{tag}</Pill>
-		))}
+{data.url ? (
+	<a class="card" href={data.url} target="_blank" rel="noopener noreferrer">
+		<ProfileCard data={data} />
+	</a>
+) : (
+	<div class="card">
+		<ProfileCard data={data} />
 	</div>
-	<img src={data.img} alt={data.imgAlt || ''} loading="lazy" decoding="async" />
-</a>
+)}
 
 <style>
 	.card {
@@ -31,49 +30,5 @@ const { data, id } = Astro.props.contributor;
 		position: relative;
 		text-decoration: none;
 		transition: all 0.3s ease;
-	}
-
-	.title {
-		color: #ffffff;
-		font-size: var(--text-lg);
-		font-weight: 800;
-		grid-area: 1 / 1 / 1 / 1;
-		margin: 0.2rem;
-		padding: 0.1rem 0.5rem;
-		z-index: 1;
-	}
-
-	.tags {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.25rem;
-		grid-area: 3 / 1 / 3 / 3;
-		margin: 0.5rem;
-		padding: 0.25rem 1rem;
-		z-index: 1;
-	}
-
-	img {
-		grid-area: 1 / 1 / 4 / 3;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		z-index: 0;
-	}
-
-	@media (min-width: 55em) {
-		.title {
-			font-size: var(--text-xl);
-			margin: 0.5rem;
-			padding: 0.5rem 1rem;
-		}
-		.tags {
-			grid-area: 3 / 1 / 3 / 3;
-			margin: 1rem;
-			padding: 0.5rem 1.5rem;
-		}
-		img {
-			grid-area: 1 / 1 / 4 / 3;
-		}
 	}
 </style>

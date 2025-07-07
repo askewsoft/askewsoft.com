@@ -35,7 +35,7 @@ export const collections = {
 			tags: z.array(z.string()).optional(),
 			img: z.string(),
 			imgAlt: z.string().optional(),
-			liurl: z.string().optional(),
+			url: z.string().optional(),
 		}),
 	}),
 };
