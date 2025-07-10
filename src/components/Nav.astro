@@ -1,6 +1,7 @@
 ---
 import Icon from './Icon.astro';
 import ThemeToggle from './ThemeToggle.astro';
+import Logo from './Logo.astro';
 
 // Fun way to keep the nav labels dynamic
 const labels = {
@@ -32,8 +33,8 @@ const isCurrentPage = (href: string) => {
 <nav class="wrapper">
 	<div class="menu-header">
 		<div class="site-title">
-			<span class="site-title-text">Askewsoft</span>
-		</div>	
+			<Logo responsive={true} color="var(--logo-color)" />
+		</div>
 		<menu-button>
 			<template>
 				<button class="menu-button" aria-expanded="false">
@@ -141,6 +142,8 @@ const isCurrentPage = (href: string) => {
 		margin-right: auto;
 	}
 
+
+
 	.menu-header {
 		display: flex;
 		justify-content: space-between;
@@ -148,18 +151,33 @@ const isCurrentPage = (href: string) => {
 		padding: 1.5rem;
 	}
 
+	/* Center logo when menu button is visible (mobile/tablet) */
+	.menu-header:has(menu-button:not([hidden])) {
+		justify-content: center;
+		position: relative;
+	}
+
+	/* Position hamburger menu absolutely on the right */
+	.menu-header:has(menu-button:not([hidden])) menu-button {
+		position: absolute;
+		right: 1.5rem;
+	}
+
+	/* Hide menu button on large screens but keep logo left-aligned */
+	@media (min-width: 55em) {
+		.menu-header {
+			justify-content: flex-start;
+		}
+		
+		.menu-header menu-button {
+			position: static;
+		}
+	}
+
 	.site-title {
 		display: flex;
 		align-items: center;
 		line-height: 1.1;
-	}
-
-	.site-title-text {
-		font-family: Inter, sans-serif;
-		font-size: var(--text-3xl);
-		font-style: italic;
-		font-weight: 600;
-		color: var(--gray-0);
 	}
 
 	.menu-button {
