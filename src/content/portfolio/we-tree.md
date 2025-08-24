@@ -1,8 +1,9 @@
 ---
 title: We Tree
 publishDate: 2025-07-06 00:00:00
-img: /assets/stock-3.jpg
-imgAlt: blurred placeholder image
+img: /assets/we-tree-md.png
+imgDetail: /assets/we-tree-md.png
+imgAlt: blurred image of a tree with stick figures attaching portraits to the branches as leafs
 description: |
   Open source, permission based, collaborative family tree editor & explorer
 detailAvailable: true
