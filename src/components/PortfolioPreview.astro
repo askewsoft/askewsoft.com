@@ -41,9 +41,10 @@ const detailAvailable = data.detailAvailable;
 	}
 
 	.title {
-		color: #283044;
+		color: #fff;
 		font-size: var(--text-lg);
 		font-weight: 800;
+		text-shadow: 0.1rem 0.1rem 0.1rem #444;
 		grid-area: title;
 		z-index: 2;
 		margin: 0.25rem;
@@ -57,9 +58,10 @@ const detailAvailable = data.detailAvailable;
 	}
 
 	.description {
-		color: #283044;
+		color: #fff;
 		font-size: var(--text-md);
 		font-weight: 600;
+		text-shadow: 0.1rem 0.1rem 0.1rem #444;
 		grid-area: main;
 		z-index: 2;
 		margin: 0.25rem;
@@ -85,7 +87,7 @@ const detailAvailable = data.detailAvailable;
 		object-fit: cover;
 		object-position: center;
 		z-index: 1;
-		filter: blur(0.5rem);
+		filter: blur(0.25rem);
 	}
 
 	@media (min-width: 55em) {
