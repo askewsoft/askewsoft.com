@@ -12,6 +12,6 @@
     "deploy": "npm run s3sync && npm run clearcache"
   },
   "dependencies": {
-    "astro": "^5.8.1"
+    "astro": "^5.13.3"
   }
 }
