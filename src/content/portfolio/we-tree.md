@@ -1,5 +1,5 @@
 ---
-title: We Tree
+title: WeTree™
 publishDate: 2025-07-06 00:00:00
 img: /assets/we-tree-md.png
 imgDetail: /assets/we-tree-md.png

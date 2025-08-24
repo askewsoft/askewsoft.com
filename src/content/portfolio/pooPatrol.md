@@ -1,5 +1,5 @@
 ---
-title: PooPatrol
+title: PooPatrol™
 publishDate: 2025-08-11 00:00:00
 img: /assets/stock-2.jpg
 imgAlt: calendars, clocks, and scrolls

@@ -1,5 +1,5 @@
 ---
-title: pHiT
+title: pHiT™
 publishDate: 2025-07-02 00:00:00
 img: /assets/stock-4.jpg
 imgAlt: Soft pink and baby blue water ripples together in a subtle texture.

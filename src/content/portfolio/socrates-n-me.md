@@ -1,5 +1,5 @@
 ---
-title: Socrates & Me
+title: Socrates & Me™
 publishDate: 2025-07-06 00:00:00
 img: /assets/stock-2.jpg
 imgAlt: background image of socrates, einstein, and question marks
