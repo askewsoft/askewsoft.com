@@ -7,8 +7,8 @@ imgAlt: blurred image of a tree with stick figures attaching portraits to the br
 description: |
   Open source, permission based, collaborative family tree editor & explorer
 detailAvailable: true
-label: vaporware
-age: future
+label: coming soon
+age: newish
 tags:
   - React
   - TypeScript
