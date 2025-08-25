@@ -1,7 +1,8 @@
 ---
 title: PooPatrol™
 publishDate: 2025-08-11 00:00:00
-img: /assets/stock-2.jpg
+img: /assets/pooPatrol-md.png
+imgDetail: /assets/pooPatrol-md.png
 imgAlt: calendars, clocks, and scrolls
 description: |
   Take the "oops" out of the poops by knowing where they went
