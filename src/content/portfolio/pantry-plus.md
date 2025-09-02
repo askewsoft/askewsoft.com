@@ -1,9 +1,9 @@
 ---
 title: PantryPlus™
 publishDate: 2025-03-04 00:00:00
-img: /assets/stock-3.jpg
+img: /assets/pantry-plus-hero-lg.png
 imgAlt: Sample screen shots of the pantry plus mobile app
-imgDetail: /assets/pantryPlusLogo.png
+imgDetail: /assets/pantry-plus-hero-lg.png
 imgDetailScale: 0.8
 description: |
   Shareable shopping lists that automatically sort categories based on your location

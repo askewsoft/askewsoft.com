@@ -1,7 +1,7 @@
 ---
 title: WhoWhatWhereWhen™
 publishDate: 2025-03-02 00:00:00
-img: /assets/stock-1.jpg
+img: /assets/stock-3.jpg
 imgAlt: calendars, clocks, and scrolls
 description: |
   Helping you put your ancestors' lives into chronological context
