@@ -43,9 +43,14 @@ const screenshots = project.data.screenshots || [];
 				<div set:html={project.body} />
 			</article>
 
-			{project.data.repo && (
-				<div class="repo-container">
-					<LinkNewWindow href={project.data.repo} text="View on GitHub" />
+			{(project.data.repo || project.data.website) && (
+				<div class="url-container">
+					{project.data.repo && (
+						<LinkNewWindow href={project.data.repo} text="View on GitHub" />
+					)}
+					{project.data.website && (
+						<LinkNewWindow href={project.data.website} text="View Website" />
+					)}
 				</div>
 			)}
 
@@ -109,10 +114,11 @@ const screenshots = project.data.screenshots || [];
 		text-decoration-color: currentColor;
 	}
 
-	.repo-container {
+	.url-container {
 		grid-column: 2 / 3;
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		align-items: center;
 		margin-top: 2rem;
 	}
 
@@ -143,6 +149,13 @@ const screenshots = project.data.screenshots || [];
 
 		.portfolio > :global(:first-child) {
 			grid-column-start: 2;
+		}
+
+		.url-container {
+			justify-content: center;
+			flex-direction: row;
+			gap: 3rem;
+			margin-top: 2rem;
 		}
 
 		.screenshots-container {

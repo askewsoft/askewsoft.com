@@ -10,6 +10,7 @@ export const collections = {
 			description: z.string(),
 			detailAvailable: z.boolean(),
 			repo: z.string().optional(),
+			website: z.string().optional(),
 			label: z.enum(['published', 'beta', 'vaporware', 'coming soon']),
 			age: z.enum(['newish', 'old', 'future']),
 			publishDate: z.coerce.date(),

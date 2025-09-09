@@ -7,6 +7,8 @@ imgAlt: blurred image of a tree with stick figures attaching portraits to the br
 description: |
   Open source, permission based, collaborative family tree editor & explorer
 detailAvailable: true
+repo: https://github.com/askewsoft/we-tree/
+website: https://we-tree.app/
 label: coming soon
 age: newish
 tags:
